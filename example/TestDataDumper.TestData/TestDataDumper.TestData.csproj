@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net7.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <DefineConstants Condition="$([MSBuild]::IsOSUnixLike())">MAC</DefineConstants>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\TestDataDumper.Data.Entities\TestDataDumper.Data.Entities.csproj" />
+    </ItemGroup>
+
+</Project>
